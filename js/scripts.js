@@ -1,5 +1,5 @@
-$(document).ready(function(event) {
-  $("form#appointment").submit(function() {
+$(document).ready(function() {
+  $("form#appointment").submit(function(event) {
 
     var nameInput = $("input#addname").val();
     var detailInput = $("input#adddetail").val();
@@ -12,7 +12,6 @@ $(document).ready(function(event) {
     $(".adddate").text(dateInput);
     $(".starttime").text(startInput);
     $(".endtime").text(endInput);
-
     $("#message").show();
 
     event.preventDefault();
